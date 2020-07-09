@@ -1,3 +1,4 @@
+{% include lib/mathjax.html %}
 # Bootstrap your own latent (BYOL)
 
 It is very unclear how to have $$\alpha$$ math.
