@@ -1,5 +1,3 @@
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 # Bootstrap your own latent (BYOL)
 
 It is very unclear how to have $$\alpha$$ math.
