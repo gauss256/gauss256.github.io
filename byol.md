@@ -11,6 +11,8 @@ $$
 
 For example,
 
-$$\xi \leftarrow \tau \xi+(1-\tau) \theta$$
+$$
+\xi \leftarrow \tau \xi+(1-\tau) \theta
+$$
 
 Do I need to put newlines before and after the math delimiters?
