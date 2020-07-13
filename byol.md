@@ -1,14 +1,30 @@
 {% include lib/mathjax.html %}
-# Bootstrap your own latent (BYOL)
-[Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning](https://arxiv.org/abs/2006.07733)
+# Background for "Bootstrap your own latent (BYOL)"
+
+The next reading group meetup will discuss the paper [Bootstrap Your Own Latent: A New Approach to Self-Supervised Learning](https://arxiv.org/abs/2006.07733). We don't discuss the paper itself here but want to give some background so people not familiar with self-supervised learning can have some context and explanation of the terminology used.
+
+We assume that the reader has a general idea about how machine learning is done, but will otherwise keep the prerequisites to a minimum. The BYOL paper advances work reported in another paper we read recently: [A Simple Framework for Contrastive Learning of Visual Representations](https://arxiv.org/abs/2002.05709). If you are comfortable with the ideas discussed there, you will probably not find much new here and should just dive right into the BYOL paper.
 
 ## Self-supervised learning
-- A form of unsupervised learning where the data provides the supervision
+
+Here's the story in a nutshell. The rest of this blog post will elaborate.
+
+_Self-supervised learning_ is a form of unsupervised learning where the data provides the supervision. (Yes, that definition is a bit self-contradictory. Just go with it.) Typically it involves withholding some part of the data and training a network to predict it. This is called a _pretext task_ because we don't usually care about the task itself. What we care about is something we learn along the way.
+
+<p align="center">
+    <img src="images/byol_self-sup-lecun.png"><br/>
+    Fig. 1 Examples of self-supervised pretext tasks. (<a href="https://www.youtube.com/watch?v=7I0Qt7GALVk">src</a>)
+</p>
+
+The thing we learn is a _representation_ of the data. We use that for a downstream task that is the real task of interest. This is an example of _transfer learning_.
+
+The advantage of the self-supervised learning is that we can do something useful with a data set even if only some of it is labelled.
+
 - advantage: so don't need labels
 -  withhold some part of the data, and task the network with predicting it => _pretext task_
 -  we usually don't care about the pretext task
 -  what we care about is the intermediate representation
--  transfer learning: use that representation for real task
+-  transfer learning: use that representation for the real task of interest
 -  need few labels => semi-supervised learning
 
 ## Example: image classification
