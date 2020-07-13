@@ -18,6 +18,10 @@
 - for example, maybe we can find a mapping $x\rightarrow f_\theta(x)$ that takes an image $x$ as input and outputs a 2D point $y=f_\theta(x)$
 - if we do this randomly, our representation will not be very helpful
 
+$$
+x\rightarrow f_\theta(x)
+$$
+
 ![random representation](images/byol_random.png)
 
 Fig. 1 A random representation of images. Each circle corresponds to one image.
