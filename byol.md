@@ -15,7 +15,7 @@
 - suppose we want to classify pictures of animals
 - classes: alligator, bear, cat, dog
 - we'd like to find a _representation_ of images to make this easy (easier)
-- for example, maybe we can find a mapping $$x\rightarrow f_\theta(x)$$ that takes an image $x$ as input and outputs a 2D point $y=f_\theta(x)$
+- for example, maybe we can find a mapping $x\rightarrow f_\theta(x)$ that takes an image $x$ as input and outputs a 2D point $y=f_\theta(x)$
 - if we do this randomly, our representation will not be very helpful
 
 ![random representation](images/byol_random.png)
